@@ -1,218 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalyst Learning Hub</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalyst Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to Catalyst Learning Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#pricing-plans">Pricing Plans</a></li>
+                <li><a href="#course-search">Course Search</a></li>
+                <li><a href="#student-dashboard">Student Dashboard</a></li>
+                <li><a href="#discussion-forum">Discussion Forum</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <h1>🚀 Catalyst Learning Hub</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <main>
+        <!-- Existing content here -->
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Education is the catalyst that turns potential into progress</h2>
-      <p>Join thousands of students transforming their futures with our interactive learning platform</p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary" id="loginBtn">Student Login</button>
-        <button class="btn btn-secondary" id="registerBtn">Register Now</button>
-      </div>
-    </div>
-  </section>
+        <section id="pricing-plans">
+            <h2>Pricing Plans</h2>
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Access to basic courses and resources.</p>
+                <p>Price: $10/month</p>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>Access to all courses, premium content, and resources.</p>
+                <p>Price: $20/month</p>
+            </div>
+        </section>
 
-  <!-- Features Section -->
-  <section id="features" class="features">
-    <div class="container">
-      <h2>Why Choose Catalyst?</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">📚</div>
-          <h3>Comprehensive Courses</h3>
-          <p>Access hundreds of expertly-designed courses across multiple subjects</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">👨‍🏫</div>
-          <h3>Expert Instructors</h3>
-          <p>Learn from industry professionals with years of experience</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⏱️</div>
-          <h3>Learn at Your Pace</h3>
-          <p>Flexible scheduling that fits your lifestyle and commitments</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🏆</div>
-          <h3>Certifications</h3>
-          <p>Earn recognized certificates to boost your career prospects</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💬</div>
-          <h3>Community Support</h3>
-          <p>Connect with peers and get help from our supportive community</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📊</div>
-          <h3>Track Progress</h3>
-          <p>Monitor your learning journey with detailed analytics and insights</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="course-search">
+            <h2>Search for Courses</h2>
+            <input type="text" placeholder="Search courses...">
+            <button>Search</button>
+        </section>
 
-  <!-- Courses Section -->
-  <section id="courses" class="courses">
-    <div class="container">
-      <h2>Popular Courses</h2>
-      <div class="courses-grid">
-        <div class="course-card">
-          <div class="course-image">💻</div>
-          <h3>Web Development</h3>
-          <p>Master HTML, CSS, JavaScript and build modern web applications</p>
-          <span class="course-level">Beginner to Advanced</span>
-        </div>
-        <div class="course-card">
-          <div class="course-image">🤖</div>
-          <h3>Artificial Intelligence</h3>
-          <p>Explore AI fundamentals and machine learning concepts</p>
-          <span class="course-level">Intermediate</span>
-        </div>
-        <div class="course-card">
-          <div class="course-image">📊</div>
-          <h3>Data Science</h3>
-          <p>Learn data analysis, visualization, and statistical modeling</p>
-          <span class="course-level">Intermediate to Advanced</span>
-        </div>
-        <div class="course-card">
-          <div class="course-image">🎨</div>
-          <h3>UI/UX Design</h3>
-          <p>Create beautiful and user-friendly digital experiences</p>
-          <span class="course-level">Beginner to Intermediate</span>
-        </div>
-        <div class="course-card">
-          <div class="course-image">📱</div>
-          <h3>Mobile Development</h3>
-          <p>Build native and cross-platform mobile applications</p>
-          <span class="course-level">Intermediate</span>
-        </div>
-        <div class="course-card">
-          <div class="course-image">☁️</div>
-          <h3>Cloud Computing</h3>
-          <p>Master cloud platforms and deployment strategies</p>
-          <span class="course-level">Advanced</span>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="student-dashboard">
+            <h2>Student Dashboard</h2>
+            <p><a href="/dashboard">Access your dashboard here</a></p>
+        </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <h2>What Our Students Say</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <p>"Catalyst Learning Hub transformed my career! The courses are well-structured and the instructors are incredibly knowledgeable."</p>
-          <h4>Sarah Johnson</h4>
-          <span>Web Developer</span>
-        </div>
-        <div class="testimonial-card">
-          <p>"I loved the flexibility and community support. I was able to learn at my own pace while getting help whenever I needed it."</p>
-          <h4>Michael Chen</h4>
-          <span>Data Analyst</span>
-        </div>
-        <div class="testimonial-card">
-          <p>"The certification I earned here opened doors I never thought possible. Highly recommend to anyone serious about learning!"</p>
-          <h4>Emily Rodriguez</h4>
-          <span>UX Designer</span>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="course-details-modal">
+            <h2>Course Details</h2>
+            <p>Click on a course to see more details.</p>
+            <!-- Modal implementation goes here -->
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>Have questions? We'd love to hear from you!</p>
-      <p>Email: info@catalystlearninghub.com | Phone: 1-800-CATALYST</p>
-    </div>
-  </section>
+        <section id="discussion-forum">
+            <h2>Discussion Forum</h2>
+            <p>Join the conversation with fellow students.</p>
+            <a href="/forum">Go to Discussion Forum</a>
+        </section>
+    </main>
 
-  <!-- Login Modal -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeLogin">&times;</span>
-      <h2>Student Login</h2>
-      <form id="loginForm">
-        <div class="form-group">
-          <label for="loginEmail">Email:</label>
-          <input type="email" id="loginEmail" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="loginPassword">Password:</label>
-          <input type="password" id="loginPassword" name="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-      </form>
-    </div>
-  </div>
+    <footer>
+        <p>&copy; 2026 Catalyst Learning Hub. All rights reserved.</p>
+    </footer>
 
-  <!-- Register Modal -->
-  <div id="registerModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeRegister">&times;</span>
-      <h2>Create Your Account</h2>
-      <form id="registerForm">
-        <div class="form-group">
-          <label for="registerName">Full Name:</label>
-          <input type="text" id="registerName" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="registerEmail">Email:</label>
-          <input type="email" id="registerEmail" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="registerPassword">Password:</label>
-          <input type="password" id="registerPassword" name="password" required>
-        </div>
-        <div class="form-group">
-          <label for="registerConfirm">Confirm Password:</label>
-          <input type="password" id="registerConfirm" name="confirm" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Register</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Catalyst Learning Hub. All rights reserved.</p>
-      <ul class="footer-links">
-        <li><a href="#privacy">Privacy Policy</a></li>
-        <li><a href="#terms">Terms of Service</a></li>
-        <li><a href="#about">About Us</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
